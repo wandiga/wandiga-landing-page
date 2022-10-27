@@ -1,0 +1,58 @@
+/* Basic styles */
+:root {
+  --color-brand: hsla(38, 70%, 91%);
+  --color-neutral-black: hsla(0, 0%, 0%, 100%);
+  --color-neutral-white: hsla(0, 0%, 100%, 100%); 
+  --color-box-shadow: hsla(0, 0%, 0%, 0.04);
+
+  --font-family-primary: 'Inter', sans-serif;
+}
+
+/* Webpage setup */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography setup */
+h1 {
+  font-family: var(--font-family-primary);
+  font-weight: 600;
+  color: var(--color-neutral);
+}
+
+p {
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  color: var(--color-neutral);
+}
+
+/* Basic Layout */
+.container {
+  width: 75%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  padding: 20px 0px;
+  background: var(--color-neutral-white);
+  /* backdrop-filter: blur(50px); */
+  box-shadow: 0 2px 4px var(--color-box-shadow);
+  cursor: default;
+}
+
+header img {
+  width: 10%;
+  height: auto;
+  margin: 0 auto;
+}
